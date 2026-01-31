@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { cartService, orderService } from '../services/api';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -202,15 +202,7 @@ export const Checkout = () => {
   const { isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (!isAuthenticated) {
-      navigate('/login');
-      return;
-    }
-    fetchCart();
-  }, [isAuthenticated, navigate]);
-
-  const fetchCart = async () => {
+  const fetchCart = useCallback(async () => {
     try {
       const response = await cartService.getCart();
       if (response.data.items.length === 0) {
@@ -223,7 +215,15 @@ export const Checkout = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [navigate]);  //added navigate to dependency array
+
+   useEffect(() => {
+    if (!isAuthenticated) {
+      navigate('/login');
+      return;
+    }
+    fetchCart();
+  }, [isAuthenticated, navigate, fetchCart]);
 
   if (loading) {
     return <div className="text-center py-12">Loading...</div>;
