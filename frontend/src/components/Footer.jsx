@@ -13,20 +13,20 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-secondary transition">About Us</a></li>
-              <li><a href="#" className="hover:text-secondary transition">Contact</a></li>
-              <li><a href="#" className="hover:text-secondary transition">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-secondary transition">Terms of Service</a></li>
+              <li><a href="/about" className="hover:text-secondary transition">About Us</a></li>
+              <li><a href="/contact" className="hover:text-secondary transition">Contact</a></li>
+              <li><a href="/privacy-policy" className="hover:text-secondary transition">Privacy Policy</a></li>
+              <li><a href="/terms-of-service" className="hover:text-secondary transition">Terms of Service</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Support</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-secondary transition">FAQ</a></li>
-              <li><a href="#" className="hover:text-secondary transition">Shipping Info</a></li>
-              <li><a href="#" className="hover:text-secondary transition">Returns</a></li>
-              <li><a href="#" className="hover:text-secondary transition">Support</a></li>
+              <li><a href="/faq" className="hover:text-secondary transition">FAQ</a></li>
+              <li><a href="/shipping-info" className="hover:text-secondary transition">Shipping Info</a></li>
+              <li><a href="/returns" className="hover:text-secondary transition">Returns</a></li>
+              <li><a href="/support" className="hover:text-secondary transition">Support</a></li>
             </ul>
           </div>
         </div>
