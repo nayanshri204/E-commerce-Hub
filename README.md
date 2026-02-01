@@ -235,7 +235,7 @@ REACT_APP_STRIPE_PUBLIC_KEY=pk_test_your_stripe_public_key
 
 ## 🚀 Deployment
 
-### Backend (Heroku/Vercel)
+### Backend (Render)
 1. Set environment variables in hosting platform
 2. Push code to Git repository
 3. Connect repository to deployment platform
