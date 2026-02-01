@@ -34,8 +34,7 @@ const CheckoutForm = ({ cart, onSuccess }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!stripe || !elements) 
-      return;
+    if (!stripe || !elements) return;
 
     setLoading(true);
 
