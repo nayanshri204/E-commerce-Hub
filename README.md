@@ -1,10 +1,13 @@
 # Dynamic E-Commerce Hub
 
-|  #  | Project                                                                                                                     | Live Demo  |
-| :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 01  | [See The Frontend](https://github.com/nayanshri204/E-commerce-Hub.git)                         | [Live Demo](https://e-commerce-hub-omega.vercel.app/)            |
+## 🔗 Project Links
 
-| 02  | [See The Backend](https://github.com/nayanshri204/E-commerce-Hub.git)                             | [Live Demo](https://e-commerce-hub-6f2p.onrender.com)            |
+| Service   | Status | URL |
+|----------|--------|-----|
+| Frontend | 🟢 Live | [Vercel](https://e-commerce-hub-omega.vercel.app/) |
+| Backend  | 🟢 Live | [Render](https://e-commerce-hub-6f2p.onrender.com/) |
+| GitHub   | 📦 Repo | [Source Code](https://github.com/nayanshri204/E-commerce-Hub.git) |
+
 
 A comprehensive full-stack e-commerce platform built with React and Node.js, featuring product catalogs, user authentication, shopping cart, and Stripe-integrated checkout process. The application is powered by a MongoDB database.
 
